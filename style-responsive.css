@@ -1,0 +1,185 @@
+/*..............DEKSTOP TO MOBILE */
+@media only screen and (max-width: 1000px) {
+  /*....MAIN CONTAINER START......*/
+  .main-container {
+    width: 98%;
+  }
+  /*....MAIN CONTAINER START END.....*/
+  /*......ASIDE SECTION START.......*/
+  .controlling-aside {
+    position: relative;
+    width: 100%;
+    left: 0;
+    margin-top: 5%;
+  }
+  .aside-container {
+    position: static;
+    margin-right: 2%;
+    overflow: none;
+    width: 40%;
+    margin-left: 30%;
+  }
+  .aside-heading {
+    z-index: 0;
+    position: static;
+  }
+  /*......ASIDE SECTION END.......*/
+  /*....... FOOTER SECTION START........*/
+  .audio-system {
+    margin-top: 2%;
+    width: 35%;
+  }
+  .slider {
+    width: 70%;
+  }
+  .slider input {
+    width: 60%;
+  }
+  .volume-control {
+    gap: 0.5%;
+    margin-right: 3%;
+  }
+  /*.......FOOTER SECTION END....*/
+}
+@media only screen and (max-width: 700px) {
+  /* Changes in the navigation bar.....*/
+  .icon {
+    margin-right: 1%;
+  }
+  .icon img {
+    margin-right: 1%;
+  }
+  .icon img {
+    height: 40px;
+    width: 40px;
+  }
+  .nav-font-size p {
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: 100;
+  }
+  .content #studio {
+    font-weight: 400;
+  }
+  .search-box {
+    width: 40%;
+  }
+  .search-box input {
+    width: 70%;
+  }
+  .nav-bar .search-box .search-icon {
+    margin: 2px 0px 0px 8px;
+  }
+  .nav-bar .search-box .microphone {
+    margin-right: 1%;
+  }
+  .bell-icon i {
+    font-size: 28px;
+  }
+  .profile-pic img {
+    height: 40px;
+    width: 40px;
+  }
+  /*...... POPULAR ARTIST SECTION START......*/
+  .font-style-popular {
+    font-size: 0.7rem;
+    font-weight: 300;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /*.......... NAVIGATION BAR START.........*/
+  .nav-bar {
+    padding: 10px 10px;
+  }
+  .icon img {
+    margin-right: 3px;
+  }
+  .icon img {
+    height: 30px;
+    width: 30px;
+  }
+  .nav-font-size p {
+    font-size: 8px;
+    font-weight: 100;
+  }
+  .content #studio {
+    font-weight: 200;
+  }
+  .search-box {
+    width: 30%;
+  }
+  .search-box input {
+    width: 60%;
+  }
+  .nav-bar .search-box .search-icon {
+    font-size: 10px;
+    margin: 2px 0px 0px 8px;
+  }
+  .nav-bar .search-box .microphone {
+    font-size: 10px;
+    margin-right: 2px;
+  }
+  .bell-icon i {
+    font-size: 28px;
+  }
+  .profile-pic img {
+    height: 40px;
+    width: 40px;
+  }
+  /*...........NAVIGATION BAR SECTION END....*/
+
+  /* ...........ASIDE SECTION START..........*/
+  .aside-heading {
+    margin-bottom: 3%;
+  }
+  .single-song {
+    gap: 6%;
+  }
+  .song-number {
+    width: 8%;
+    font-size: 10px;
+  }
+  .song-image {
+    width: 18%;
+  }
+  .music-name,
+  .singer-name {
+    font-size: 8px;
+    margin-top: 1.5px;
+  }
+  .heart-icon {
+    top: 8px;
+    right: 3%;
+  }
+  /* ..........ASIDE SECTION END.............*/
+  /*....... FOOTER SECTION START........*/
+  .music-name-logo {
+    gap: 4%;
+    width: 30%;
+  }
+  .music-image-f {
+    width: 100%;
+  }
+  .music-artist-info p {
+    font-size: 8px;
+  }
+  .audio-system {
+    margin-top: 2%;
+    width: 35%;
+  }
+  .slider {
+    width: 80%;
+  }
+  .slider input {
+    width: 100%;
+  }
+  .volume-control {
+    width: 30%;
+    gap: 4%;
+    margin-right: 3%;
+  }
+  .image-tags {
+    font-size: 10px;
+  }
+  /*.......FOOTER SECTION END....*/
+}

@@ -1,0 +1,428 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: #0b1026;
+  color: white;
+  font-family: sans-serif;
+  position: relative;
+  min-width: 350px;
+}
+
+/*............NAVIGATION BAR START............*/
+.nav-bar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 1% 3%;
+  background-color: #0b1026;
+}
+.icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.icon a:hover {
+  cursor: pointer;
+}
+.icon .content {
+  display: block;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+
+.nav-font-size {
+  color: white;
+  font-size: 15px;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+.content #studio {
+  font-weight: 700;
+}
+
+.icon img {
+  margin-right: 6px;
+  height: 50px;
+  width: 50px;
+  clip-path: circle();
+  border-radius: 50%;
+}
+
+/* ......SEARCH BOX...........*/
+.nav-bar .search-box {
+  background-color: lightgrey;
+  height: 6vh;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar .search-box input {
+  height: 100%;
+  background-color: lightgrey;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+}
+.nav-bar .search-box .search-icon {
+  margin: 4px 0px 0px 10px;
+}
+.nav-bar .search-box .microphone {
+  margin-right: 9px;
+}
+/*........... BELL ICON AND PROFLE IMAGE*/
+.profile-pic img {
+  height: 50px;
+  width: 50px;
+  clip-path: circle();
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.bell-icon i {
+  font-size: 2rem;
+}
+.profile-pic img:hover {
+  cursor: pointer;
+}
+
+/* .......MAIN CONTAINER SECTION START........*/
+.complete-container {
+  margin-top: 2%;
+  position: relative;
+}
+.main-container {
+  width: 65%;
+  margin-left: 1%;
+}
+
+/*............MAIN CONTAINER SECTION END...*/
+.content-header {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  gap: 4%;
+  background-image: linear-gradient(
+    to top left,
+    rgb(136, 27, 136),
+    rgb(34, 122, 122),
+    rgb(24, 24, 119)
+  );
+}
+.content-image {
+  width: 68%;
+  height: 100%;
+}
+.content-image img {
+  width: 100%;
+  height: 100%;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  gap: 3%;
+  padding-top: 3%;
+}
+.music-name-band {
+  display: flex;
+  justify-content: space-between;
+  gap: 10%;
+  width: 100%;
+}
+.band-name {
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+}
+.followers {
+  margin-right: 2%;
+}
+.common-style {
+  font-size: 12px;
+  color: rgb(143, 140, 140);
+}
+.play-all {
+  margin-top: 3%;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.button-details {
+  width: 40%;
+  height: 5vh;
+  background-image: linear-gradient(
+    to right,
+    rgb(26, 26, 109),
+    rgb(105, 24, 105)
+  );
+  border-style: none;
+}
+/*..............MAIN_CONTENT START........*/
+.main-content {
+  width: 100%;
+  margin-top: 3%;
+}
+
+.play-list-songs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  width: 100%;
+  background-color: rgb(3, 3, 24);
+  padding: 2%;
+  margin-bottom: 4%;
+}
+
+.single-song-main {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1%;
+}
+.song-number-main {
+  align-self: center;
+  margin-left: 3%;
+  width: 5%;
+}
+.song-image-main {
+  /* margin-top: 1%;*/
+  margin-right: 1%;
+  width: 15%;
+  /* height: 100%; */
+}
+.song-image-main img {
+  width: 100%;
+}
+.song-singer-details-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2%;
+}
+.music-name-main,
+.singer-name-main {
+  font-size: 12px;
+  margin-top: 2px;
+}
+.singer-name-main {
+  color: rgb(179, 174, 174);
+  font-size: 10px;
+}
+.add-icon {
+  margin-right: 2%;
+}
+.add-icon i {
+  font-size: 20px;
+}
+
+/*.............MAIN CONTENT END...........*/
+
+/*............ASIDE SECTION START.......*/
+.controlling-aside {
+  position: absolute;
+  top: 0;
+  left: 70%;
+}
+.aside-container {
+  position: fixed;
+  margin-right: 2%;
+  overflow: auto;
+  height: 75vh;
+}
+
+/*........Removing scollbar in aside section */
+aside::-webkit-scrollbar {
+  width: 0;
+}
+/*..........ASIDE HEADER*/
+.aside-heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+  position: sticky;
+  background-color: #0b1026;
+  top: 0;
+  z-index: 4;
+  margin: 2%;
+}
+.queue-name {
+  left: 0;
+}
+.queue-icon a {
+  text-decoration: none;
+  color: white;
+}
+.queue-icon a:hover {
+  color: rgb(115, 187, 115);
+}
+/*...........ASIDE HEADER END.......*/
+.timming {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: flex-end;
+  justify-content: center;
+  top: 0;
+  right: 2%;
+  gap: 10px;
+}
+.time {
+  margin-top: 2%;
+}
+.songs-list {
+  margin-top: 2%;
+  margin-left: 4%;
+  display: flex;
+  flex-direction: column;
+}
+
+.single-song {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2%;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  position: relative;
+}
+.song-number {
+  align-self: center;
+  width: 10%;
+}
+.song-image {
+  width: 20%;
+}
+.song-image img {
+  width: 100%;
+  height: 102%;
+}
+.song-singer-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2%;
+}
+.music-name,
+.singer-name {
+  font-size: 12px;
+  margin-top: 2px;
+  margin-bottom: 4px;
+}
+.singer-name {
+  color: rgb(179, 174, 174);
+  font-size: 10px;
+}
+/*..... Heart Icon......*/
+.heart-icon {
+  /* display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 40%; */
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+/*...............ASIDE SECTION END.......*/
+
+/*..............FOOTER SECTION START........*/
+footer {
+  background-color: #383734;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  z-index: 10;
+  bottom: 0;
+  background-color: #383734;
+}
+.music-name-logo {
+  display: flex;
+  gap: 3%;
+  margin-top: 0.7%;
+  margin-bottom: 0.5%;
+  width: 25%;
+  margin-left: 1%;
+}
+.music-image-f {
+  width: 20%;
+}
+.music-image-f img {
+  width: 100%;
+  height: 100%;
+}
+.music-artist-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3%;
+  margin-right: 4%;
+}
+.music-artist-info p {
+  font-size: 10px;
+}
+.image-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*...... AUDIO CONTROL.....*/
+.audio-control {
+  width: 40%;
+}
+.ac-part1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.random-icon-f {
+  margin-right: 2%;
+}
+.audio-system {
+  display: flex;
+  width: 25%;
+  justify-content: space-around;
+  gap: 1%;
+}
+.slider {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1% 3% 1% 3%;
+}
+.slider input {
+  width: 80%;
+}
+.volume-control {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1%;
+  margin-right: 2%;
+}
+.volume-control input {
+  width: 40%;
+}
+.expand {
+  margin-right: 1%;
+}
+
+/*................FOOTER SECTION END..........*/

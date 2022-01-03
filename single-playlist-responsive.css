@@ -1,0 +1,42 @@
+/*..........DEKSTOP TO MOBILE......*/
+@media only screen and (max-width: 1000px) {
+  /*......BODY HEADER START.......*/
+  .music-name-band {
+    gap: 8%;
+    /* border: 2px solid green; */
+    width: 100%;
+  }
+  .band-name {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .play-all {
+    width: 60%;
+  }
+  .common-style {
+    font-size: 10px;
+  }
+  /*......BODY HEADER END.......*/
+  /*....MAIN CONTENT START.........*/
+  .song-number-main {
+    margin-right: 4%;
+  }
+  /*....MAIN CONTENT END.........*/
+  /*........ASIDE SECTION START......*/
+  .aside-headding {
+    margin-bottom: 3%;
+  }
+  .queue-name,
+  .queue-icon {
+    font-size: 1rem;
+  }
+  .music-name,
+  .singer-name {
+    font-size: 10px;
+  }
+  .time {
+    font-size: 0.8rem;
+  }
+
+  /*........ASIDE SECTION END......*/
+}
